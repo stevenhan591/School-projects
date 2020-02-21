@@ -1,0 +1,17 @@
+L'algorithme pathfinding choisi pour le bonus est inspirée de l'algorithme A* (ou a étoile).
+Il est important de savoir qu'un voisinage d'une case est les 8 cases avoisinantes celle-ci.
+Supposons que nous voulons allez du point A au point B.
+L'algorithme A* fait comme s'il se déplaçait dans un voisin de A et calcule ceci :
+-un gCost : distance entre le point A et s'il se déplaçait à son voisin. On utilisera pythagore.
+-un hCost : distance entre le déplacement fait et le point B.
+-un fCost : gCost + hCost
+Le but de l'addition est qu'on veut se rapprocher le plus possible de B, mais sans trop
+s'éloigner de A. Si on avait juste pensé à tenir compte de la distance entre B et A,
+notre point pourrait s'arrêter lorsqu'il rencontre un mur (comme le deplacement sans le bonus).
+
+Mais notre algorithme est une dérivé de A*, car A* est un peu dur à coder, surtout si Zoe
+se déplace et chaque personnage bouge tour à tour. Alors, à chaque fois que le monstre est
+bloqué par un obstacle, on calculera tous les fCost de ses voisins qui n'ont pas d'obstacle
+et le monstre ira sur le plus petit. Lorsque fait, on met un true pour dire qu'il a visité
+cette case (cela évite que le monstre retourne sur ses pas). Ce n'est pas le plus optimale,
+mais au moins, il peut contourner les murs dans certains cas.
