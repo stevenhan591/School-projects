@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- Tp2 page des souliers sur mesure par Steven Han -->
+<html lang="fr">
+   <head>
+      <title> Bonsoulier - Chaussure sur mesure </title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="CssTp2.css">
+      <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <nav>
+         <form method="post" action="http://www-etud.iro.umontreal.ca/~chartral/ift1005/form_print.php">
+            <a class="Fausse_Liste" href="Accueil.html" id="NomCompagnie"> Bonsoulier</a>
+            <a class="Fausse_Liste" href="a_propos.html"> À propos</a>
+            <a class="Fausse_Liste" href="Design.html"> Design</a>
+            <a class="Fausse_Liste" href="Homme.html"> Homme</a>
+            <a class="Fausse_Liste" href="Femme.html"> Femme</a>
+            <a class="Fausse_Liste" href="Mesures.html"> Chaussure sur mesure</a>
+            <input type="search" name="mySearch" id="mySearch" placeholder="rechercher">
+         </form>
+      </nav>
+      <main>
+         <h2> Chaussure Sur Mesure </h2>
+         <h3> Vous avez deux façons d'obtenir vos chaussures sur mesure. </h3>
+         <ol>
+            <li> Par ce site web en remplissant le formulaire ci-dessous. </li>
+            <li> En nous rendant visite à notre magasin. Cliquez ici pour plus de détails : <a id="renseignement" href=""> Renseignements. </a>  </li>
+         </ol>
+         <h3> Afin de vous procurer la meilleur qualité, veuillez remplir les cases ci-dessous. Les champs avec des astérisques (*) sont obligatoires. </h3>
+         <form id="Contact" method="post" action="http://www-etud.iro.umontreal.ca/~chartral/ift1005/form_print.php
+            ">
+            <div>
+               *Modèle désiré :  
+               <select name="myModel">
+                  <option value="adele">Adele</option>
+                  <option value="alessandra">Alessandra</option>
+                  <option value="alessia">Alessia</option>
+                  <option value="anna">Anna</option>
+                  <option value="antonio">Antonio</option>
+                  <option value="arianna">Arianna</option>
+                  <option value="aurora">Aurora</option>
+                  <option value="benedetta">Benedetta</option>
+                  <option value="camila">Camila</option>
+                  <option value="chiara">Chiara</option>
+                  <option value="davide">Davide</option>
+                  <option value="diego">Diego</option>
+                  <option value="edoardo">Edoardo</option>
+                  <option value="eleonora">Eleonora</option>
+                  <option value="elisa">Elisa</option>
+                  <option value="emma">Emma</option>
+                  <option value="federico">Federico</option>
+                  <option value="francesco">Francesco</option>
+                  <option value="gabriele">Gabriele</option>
+                  <option value="gaia">Gaia</option>
+                  <option value="giada">Giada</option>
+                  <option value="ginevra">Ginevra</option>
+                  <option value="giovanni">Giovanni</option>
+                  <option value="giula">Giula</option>
+                  <option value="giuseppe">Giuseppe</option>
+                  <option value="greta">Greta</option>
+                  <option value="guavici">Guavici</option>
+                  <option value="irene">Irene</option>
+                  <option value="leonardo">Leonardo</option>
+                  <option value="lorenzo">Lorenzo</option>
+                  <option value="ludovica">Ludovica</option>
+                  <option value="marco">Marco</option>
+                  <option value="maria">Maria</option>
+                  <option value="matilde">Matilde</option>
+                  <option value="matteo">Matteo</option>
+                  <option value="mattia">Mattia</option>
+                  <option value="melissa">Melissa</option>
+                  <option value="mia">Mia</option>
+                  <option value="pietro">Pietro</option>
+                  <option value="riccardo">Riccardo</option>
+                  <option value="samuele">Samuele</option>
+                  <option value="sofia">Sofia</option>
+                  <option value="tommaso">Tommaso</option>
+                  <option value="valentina">Valentina</option>
+                  <option value="viola">Viola</option>
+               </select>
+            </div>
+            <div>
+               <label for="myName">*Prénom: </label> 
+               <input type="text" name="myName" id="myName" required>
+            </div>
+            <div>
+               <label for="myFamilyName">*Nom: </label> 
+               <input type="text" name="myFamilyName" id="myFamilyName" required>
+            </div>
+            <div>
+               <label for="myEmail">*Email: </label> 
+               <input type="email" name="myEmail"  required>
+            </div>
+            <div>
+               <label for="myTelephone">Téléphone: </label> 
+               <input type="tel" name="myTelephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="myTelephone">
+            </div>
+            <div>
+               <label for="myLength">*Longueur de pied (cm) : </label> 
+               <input type="number" name="myLength" id="myLength" min="1" required>
+            </div>
+            <div>
+               <label for="myWidth">*Largeur de pied (cm) : </label> 
+               <input type="number" name="myWidth" id="myWidth" min="1" required>
+            </div>
+            <div>
+               <label for="myWeight">*Poids (lbs) : </label> 
+               <input type="number" name="myWeight" id="myWeight" min="1" required>
+            </div>
+            <div>
+               <label for="myComments"> Commentaires: </label> 
+               <textarea name="myComments" id="myComments" rows="5" cols="20" > </textarea>
+            </div>
+            <div id="Soumettre">
+               <input type="submit" value="Soumettre">
+               <input type="reset" value="Réinitialiser">
+            </div>
+         </form>
+      </main>
+      <footer>
+         <table>
+            <tr>
+               <th class="footer"> Service à la clientèle </th>
+               <th class="footer"> Comment nous contacter? </th>
+               <th class="footer"> Inscrivez-vous pour recevoir les soldes les plus récentes </th>
+               <th class="footer"> Notre équipe de cordonniers </th>
+            </tr>
+            <tr>
+               <td><a href="" class="footer"> Livraison</a></td>
+               <td><a href="mailto:Steven_yo100@hotmail.com" class="footer"> Email</a></td>
+               <td>
+                  <form method="post" action="http://www-etud.iro.umontreal.ca/~chartral/ift1005/form_print.php
+                     ">
+                     <label for="myEmail"></label> <input type="email" name="myEmail" id="myEmail" placeholder="Votre adresse courriel">
+                  </form>
+               </td>
+               <td><a href="" class="footer"> Steven Han</a></td>
+            </tr>
+            <tr>
+               <td><a href="" class="footer"> Garantie des produits</a></td>
+               <td><a href="" class="footer"> Téléphone</a></td>
+               <td> </td>
+               <td><a href="" class="footer"> Vina Chakour</a></td>
+            </tr>
+            <tr>
+               <td><a href="" class="footer"> Paiement</a></td>
+               <td><a href="" class="footer"> Instagram</a></td>
+               <td> </td>
+               <td><a href="" class="footer"> Alexandre Cousineau</a></td>
+            </tr>
+            <tr>
+               <td><a href="" class="footer"> Souliers</a></td>
+               <td><a href="" class="footer"> Facebook</a></td>
+               <td> </td>
+               <td><a href="" class="footer"> Bob Ross</a></td>
+            </tr>
+            <tr>
+               <td><a href="" class="footer"> Retours Et Échanges</a></td>
+               <td><a href="" class="footer"> Twitter</a> </td>
+               <td> </td>
+               <td><a href="" class="footer"> Vincent Van Gogh</a></td>
+            </tr>
+            <tr>
+               <td><a href="" class="footer"> Produits défectueux</a></td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+            </tr>
+            <tr>
+               <td><a href="" class="footer"> FAQ</a></td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+            </tr>
+            <tr>
+               <td><a href="" class="footer"> Trouver un magasin</a></td>
+               <td> </td>
+               <td> </td>
+               <td> </td>
+            </tr>
+         </table>
+      </footer>
+   </body>
+</html>

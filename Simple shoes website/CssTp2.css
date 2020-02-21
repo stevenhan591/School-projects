@@ -1,0 +1,206 @@
+body {
+     margin : auto;
+}
+ nav {
+     text-align : center;
+     background-color : #383838;
+     color : white;
+     padding : 15px;
+     width : 100%;
+     opacity : 0.7;
+     position : fixed;
+}
+ #NomCompagnie {
+     font-family : "Brush Script MT", "Brush Script Std", cursive;
+     font-size : 2em;
+}
+ h1 {
+     text-align : center;
+     font-family : "Brush Script MT", "Brush Script Std", cursive;
+     width : 100%;
+     font-size : 6em;
+     color : #383838;
+     position : absolute;
+     top : 15%;
+}
+ h2 {
+     text-align : center;
+     font-family : "Brush Script MT", "Brush Script Std", cursive;
+     font-size : 4em;
+     color : #383838;
+     margin-top :0px;
+     padding-top : 100px;
+}
+ h3 {
+     text-align : center;
+     font-size : 1.5em;
+}
+ p {
+     text-align : center;
+     font-size : 1.5em;
+     margin-left : 2%;
+     margin-right : 2%;
+}
+ ol {
+     font-size : 1.25em;
+     width : 65%;
+     margin-left : auto;
+}
+ table {
+     width : 100%;
+     padding : 20px;
+}
+ th, #Browns, #Footlocker, #Little_Burgundy {
+     color : #383838;
+     padding-right : 2%;
+     padding-bottom : 1%;
+     font-family : "Brush Script MT", "Brush Script Std", cursive;
+     font-size : 2em;
+     text-align : center;
+}
+ td {
+     border-color : #383838;
+     border-style: solid;
+     padding : 5px;
+     text-align : center;
+}
+ a {
+     text-decoration : none;
+     color : white;
+     padding-right : 5%;
+}
+ a:hover {
+     color : black;
+}
+ figure {
+     margin-left : 0px;
+     margin-top : 0px;
+     width : 100%;
+}
+ img {
+     height : 325px;
+     width : 375px;
+     max-width : 100%;
+}
+ #Image_Accueil, #Image_Homme, #Image_Femme {
+     width : 100%;
+     height : 100%;
+}
+ label {
+     float : left;
+     clear : left;
+     width : 200px;
+}
+ input, textarea {
+     margin-bottom : 12px;
+}
+ #Contact {
+     background-color : #CCC;
+     width : 50%;
+     padding : 30px;
+     margin : auto;
+}
+ #Soumettre {
+     padding-left : 21%;
+}
+ #renseignement {
+     color : black;
+}
+ #renseignement:hover {
+     color : #4B0082;
+}
+ select {
+     margin-left : 89px;
+     margin-bottom : 12px;
+}
+ footer {
+     margin-top : 5%;
+     background-color : #383838;
+}
+ .footer {
+     color : white;
+     font-size : 1.2em;
+     font-family : "Apple Chancery", cursive;
+}
+ @media screen and (min-width : 769px) and (max-width : 1024px) {
+     h1 {
+         font-size : 4em;
+    }
+     h3 {
+         font-size : 1em;
+    }
+     li {
+         font-size : 0.8em;
+    }
+     p {
+         font-size : 1.5em;
+    }
+     th, #Browns, #Footlocker, #Little_Burgundy{
+         font-size : 1.7em;
+    }
+     .footer {
+         font-size : 0.9em;
+    }
+
+     img {
+         height : 180px;
+         width : 160px;
+    }
+}
+ @media screen and (max-width : 768px) {
+     h1 {
+         display : none;
+    }
+     h2 {
+         padding : 0px;
+    }
+     nav {
+         position : relative;
+         padding : 0px;
+    }
+     .Fausse_Liste {
+         display : list-item;
+         list-style-type : none;
+         font-size : 2em;
+    }
+
+    th, #Browns, #Footlocker, #Little_Burgundy{
+         padding : 0px;
+         font-size : 1.4em;
+    }
+     .footer {
+         font-size : 0.8em;
+    }
+     img {
+         height : auto;
+         width : 100%;
+    }
+    .tableImage {
+        display : -ms-flexbox;
+        -ms-flexbox-wrap : wrap;
+        -ms-flexbox-direction : column;
+        -webkit-flex-flow : row wrap;
+        flex-flow : row wrap;
+        display : -webkit-box;
+        margin : .5vw;
+        font-size : 0;
+    }
+    .image {
+        width : 200px;
+        margin: .5vw;        
+        -webkit-box-flex : auto;
+        -ms-flex : auto;
+        flex : auto;
+    }
+     select {
+         margin-left : 0px;
+    }
+     ul, ol, table{
+         padding : 0px;
+         margin : auto;
+    }
+     li {
+         list-style-type : none;
+    }
+}
+ 
