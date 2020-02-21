@@ -7,7 +7,6 @@ import java.util.Scanner;
  */
 public class LegendOfZoe {
 /* @author : Steven Han (20129462)
- * @author : Siddarth Baichoo (20130259)
  *
  * Ce programme est inspire de The Legend of Zelda et des jeux Roguelike. La structure generale du code est le voici :
  * On doit instancier Zoe une seule fois au debut du code pour garder ces attributs entre chaque niveau. A chaque
